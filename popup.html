@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		#main {
+			width: 300px;
+			font-family: 'Arial', sans-serif;
+		}
+
+		/* unvisited link */
+		a:link {
+			color: #009fe3;
+			text-decoration: none;
+		}
+
+		/* visited link */
+		a:visited {
+			color: #009fe3;
+			text-decoration: none;
+		}
+
+		/* mouse over link */
+		a:hover {
+			color: #ff5722;
+			text-decoration: none;
+		}
+
+		#cpiHelper_contentheader {
+			padding: 10px;
+			font-weight: bold;
+			z-index: 10;
+			background-color: #009fe3;
+			color: #fff;
+		}
+
+		#cpiHelper_content {
+			padding: 3px;
+		}
+
+		ul {
+			margin-top: 0.3em;
+		}
+
+		.input_fields {
+			margin-top: 2px;
+			padding: 2px;
+			margin-bottom: 5px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="main">
+		<div id="cpiHelper_contentheader">ConVista CPI Helper</div>
+		<div id="cpiHelper_content">
+			<div id="lastVisitedIflows"></div>
+
+				<h3>General Links</h3>
+			<ul style="list-style-type:disc;">
+
+
+				<form id="myForm">
+					<label for="fname">Basic</label><br>
+					<input type="text" id="basicid" name="fname"><br>
+					<label for="lname">Message</label><br>
+					<input type="text" id="messageid" name="lname"><br>
+					<label for="exten">Extension</label><br>
+					<input type="text" id="extensionid" name="exten"><br><br>
+
+					<input type="button" onclick="myFunction()" value="Submit form">
+
+				</form>
+
+
+			</ul>
+
+			<div id="tenantUrls"></div>
+
+
+			<p>This PlugIn was initiated by <a href=" https://convista.com" target="_blank">ConVista Consulting AG</a>.
+				Feel free to contribute at our
+				<a href="https://github.com/dbeck121/ConVista-CPI-Helper-Chrome-Extension" target="_blank">Github
+					Page</a>.</p>
+			<p id="cpihelper_version"></p>
+			<p>License: <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GNU GPL v3</a></p>
+		</div>
+	</div>
+
+	<script src="popup.js"></script>
+</body>
+
+</html>
